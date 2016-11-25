@@ -1,0 +1,26 @@
+{
+  "name": "animatejs",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gtdalp/animatejs.git"
+  },
+  "keywords": [
+    "css3",
+    "animatejs",
+    "javascript",
+    "html5",
+    "animation"
+  ],
+  "author": "xisa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gtdalp/animatejs/issues"
+  },
+  "homepage": "https://github.com/gtdalp/animatejs#readme"
+}
