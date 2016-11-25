@@ -11,12 +11,13 @@
 <link rel="stylesheet" type="text/css" href="animatejs.css" />
 <script src="../src/jslib/require.js"></script>
 </head>
-<body>
-<section id="animatejs" class="animatejs"></section>
+<body class="dn">
+<section id="animatejs" class="animatejs">1</section>
+<section class="animatejs gaga">2</section>
 <script>
 require(['zepto', 'animatejs'], function(){
     var Animatejs = require('animatejs');
-	
+	new Animatejs('animatejs',[])
 });
 require.config({
     paths: {
