@@ -15,7 +15,7 @@ html,body{
     -webkit-touch-callout:behavior;
 
 }
-h1,h2,h2,h3,h4,h5,h6{
+h1,h2,h3,h4,h5,h6{
     margin:0;
     font-size:100%;
 }
@@ -72,7 +72,6 @@ input:-webkit-autofill {
 /*html5 reset*/
 header,nav,article,section,aside,footer,figure,figcaption{
     display:block;
-
 }
 
 /*comm css*/
