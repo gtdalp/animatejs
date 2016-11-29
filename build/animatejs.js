@@ -344,21 +344,29 @@
         render: function () {
             var arr = this.arr, 
                 i = 0, 
+                t1 = '0', 
+                t2 = '1',
                 len = arr.length,
                 dataF;
 
             // 执行动画
             for ( ; i < len; i++ ) {
                 dataF = arr[i];
-                this.animate(dataF[0], dataF[1], dataF[2] || '0', dataF[3] || '1');
+                if (!isNaN(dataF[2])) {
+                    t1 = dataF[2];
+                }
+                if (!isNaN(dataF[3 ])) {
+                    t2 = dataF[3];
+                }
+                this.animate(dataF[0], dataF[1],  t1, t2);
             }
         },
         animate: function (ele, cls, t1, t2) {
             var t = (+t2) + 's';
             var dom = $(ele);
-            dom.css('visibility', 'hidden');
+            dom.css('opacity', 0);
             setTimeout(function () {
-                dom.css({'visibility': 'initial', '-webkit-animation-duration': t, '-animation-duration': t});
+                dom.css({'opacity': 1, '-webkit-animation-duration': t, '-animation-duration': t});
                 dom.addClass(cls);
             }, (+t1) * 1000);
         },

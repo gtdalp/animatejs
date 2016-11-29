@@ -31,7 +31,7 @@ require(['animatejs'], function(){
             now = new Date(now + i*1000000);
 
             __html += '<li class="' + cls + '"><span class="icon"></span><p class="title"><time class="r">' + now.getHours() + ':' + now.getMinutes() + ':' + now.getSeconds() + '</time>animatejs' + (n++) + '</p><p class="text">css3动画组件...</li>';
-            arr.push(['.' + cls, 'bounceInRight', (0.05 + i/30)]);
+            arr.push(['.' + cls, 'bounceInRight', (0.05 + i/30), 5]);
         }
         return __html;
     }
