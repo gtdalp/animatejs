@@ -15,16 +15,8 @@
     root.Animatejs = factory();
   }
 }(this, function() {
-    'use strict';
+    // 'use strict';
     if (!window.$) {
-        function inArray(array, item){
-            var yes = false;
-            Array.prototype.forEach.call(array, function(n){
-                if(n === item) yes = true;
-            });
-            return yes;
-        }
-
         // "font-size" to "fontSize"
         function camelCase(key) {
             return key.replace(/(-([a-z]))/g, function(s, s1, s2) {
