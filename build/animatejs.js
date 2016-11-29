@@ -364,8 +364,9 @@
         animate: function (ele, cls, t1, t2) {
             var t = (+t2) + 's';
             var dom = $(ele);
+            dom.css('visibility', 'hidden');
             setTimeout(function () {
-                dom.css({'display': 'block', '-webkit-animation-duration': t, '-animation-duration': t});
+                dom.css({'visibility': 'initial', '-webkit-animation-duration': t, '-animation-duration': t});
                 dom.addClass(cls);
             }, (+t1) * 1000);
         },
