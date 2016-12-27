@@ -1,7 +1,7 @@
 ﻿/**
  * animatejs
  * xisa
- * 0.0.1(2014-2016)
+ * 0.1.0(2014-2016)
  */
  /*
     底层库使用 Zepto 或者 jQuery
@@ -333,7 +333,7 @@
     }
 
     Animatejs.prototype = {
-        version: '0.0.1',
+        version: '0.1.0',
         // 初始化
         init: function (arr) {
             this.arr = arr;
