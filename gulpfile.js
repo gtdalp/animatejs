@@ -19,8 +19,8 @@ gulp.task('build', ['build-minifyCss'], function () {
 });
 // 压缩css
 gulp.task('build-minifyCss', function () {
-    gulp.src(['./demos/*.css'])
+    gulp.src(['./src/css/animate.css'])
         .pipe(minifyCss())
-        .pipe(rename('animatejs.min.css'))
+        .pipe(rename('animate.min.css'))
         .pipe(gulp.dest('./dist/css/'));
 });

@@ -7,8 +7,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 <title>css3动画组件</title>
 <link rel="stylesheet" type="text/css" href="../src/css/base.css" />
-<link rel="stylesheet" type="text/css" href="../src/css/animate.css" />
-<link rel="stylesheet" type="text/css" href="animatejs.css" />
+<link rel="stylesheet" type="text/css" href="../dist/css/animate.min.css" />
 <script src="../src/jslib/require.js"></script>
 <script src="iscroll.min.js"></script>
 </head>
@@ -31,7 +30,7 @@ require(['animatejs'], function(){
             now = new Date(now + i*1000000);
 
             __html += '<li class="' + cls + '"><span class="icon"></span><p class="title"><time class="r">' + now.getHours() + ':' + now.getMinutes() + ':' + now.getSeconds() + '</time>animatejs' + (n++) + '</p><p class="text">css3动画组件...</li>';
-            arr.push(['.' + cls, 'bounceInRight', (0.05 + i/30), 5]);
+            arr.push(['.' + cls, 'bounceInRight', (0.05 + i/30), 1]);
         }
         return __html;
     }
@@ -41,12 +40,12 @@ require(['animatejs'], function(){
 
     setTimeout(function () {
         new IScroll('#animatejs');
-    }, 1500);
+    }, 500);
     
 });
 require.config({
     paths: {
-        "animatejs": "../build/animatejs"
+        "animatejs": "../dist/js/animatejs.min"
     }
 });
 </script>
